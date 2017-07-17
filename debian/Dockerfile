@@ -8,6 +8,8 @@ ARG PROJECT_REF=master
 ARG SCRIPTS_REPO=https://github.com/openstack/loci
 ARG SCRIPTS_REF=master
 ARG OVERRIDE=override
+ARG HTTP_PROXY=""
+ARG HTTPS_PROXY=""
 
 ADD $OVERRIDE /
 
