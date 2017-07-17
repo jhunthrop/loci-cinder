@@ -13,6 +13,9 @@ ARG HTTPS_PROXY=""
 
 ADD $OVERRIDE /
 
+EXPORT HTTP_PROXY=${HTTP_PROXY}
+EXPORT HTTPS_PROXY=${HTTPS_PROXY}
+
 RUN set -x \
     && apt-get update \
     && apt-get dist-upgrade -y \
