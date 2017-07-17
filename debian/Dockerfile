@@ -14,6 +14,8 @@ ADD $OVERRIDE /
 
 ENV HTTP_PROXY=$PROXY
 ENV HTTPS_PROXY=$PROXY
+ENV http_proxy=$PROXY
+ENV https_proxy=$PROXY
 
 RUN set -x \
     && apt-get update \
